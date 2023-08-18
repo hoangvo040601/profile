@@ -1,22 +1,15 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { ImHtmlFive } from "react-icons/im";
-import {
-  DiCss3,
-  DiJavascript1,
-  DiReact,
-  DiGit,
-  // DiJava,
-} from "react-icons/di";
+import { DiCss3, DiJavascript1, DiReact } from "react-icons/di";
 import {
   SiNextdotjs,
   SiFirebase,
   SiBootstrap,
-  SiTailwindcss
- 
+  SiTailwindcss,
 } from "react-icons/si";
-// import { TbBrandGolang } from "react-icons/tb";
-import { SiTypescript } from "react-icons/si"
+
+import { SiTypescript } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -44,12 +37,11 @@ function Techstack() {
         <SiBootstrap />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <SiTailwindcss />
+        <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
-
     </Row>
   );
 }

@@ -7,7 +7,7 @@ import {
   SiVercel,
   SiMacos,
   SiGithub,
-  SiNetlify
+  SiNetlify,
 } from "react-icons/si";
 
 function Toolstack() {
