@@ -8,6 +8,8 @@ import movieApp from "../../Assets/Projects/movieApp.png";
 import todoApp from "../../Assets/Projects/todoApp.png";
 import panaverseDao from "../../Assets/Projects/panaverseDao.png";
 import weatherApp from "../../Assets/Projects/weatherApp.png";
+import digitalCal from "../../Assets/Projects/digitalCal.png";
+import gradingCal from "../../Assets/Projects/gradingCal.png";
 
 function Projects() {
   return (
@@ -78,6 +80,27 @@ function Projects() {
               title="Weather App"
               ghLink="https://github.com/developer-abdulali/Weather-App"
               demoLink="https://weather-app-livid-tau.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={digitalCal}
+              isBlog={false}
+              title="Digital Calculator"
+              ghLink="https://github.com/developer-abdulali/Digital-Calculator"
+              demoLink="https://digital-calculator-psi.vercel.app/"
+    
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gradingCal}
+              isBlog={false}
+              title="Grading Calculator"
+              ghLink="https://github.com/developer-abdulali/Grading-Calculator-app"
+              demoLink="https://grading-calculator-app.vercel.app/"
             />
           </Col>
         </Row>
