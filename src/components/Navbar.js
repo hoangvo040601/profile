@@ -12,7 +12,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import { RiContactsLine } from "react-icons/ri";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -50,9 +50,9 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span>f</span>
+          <span>g</span>
+          <span>s</span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
@@ -80,7 +80,7 @@ function NavBar() {
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
-                />{" "}
+                />
                 Projects
               </Nav.Link>
             </Nav.Item>
@@ -88,10 +88,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <RiContactsLine style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
