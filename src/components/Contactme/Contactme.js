@@ -1,99 +1,12 @@
-
-
 // https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5
-
-
-// import React, { useState } from "react";
-// import { Form, Button } from "react-bootstrap";
-
-// const Contactme = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [message, setMessage] = useState("");
-//   const [isSent, setIsSent] = useState(false);
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     const formData = new FormData();
-//     formData.append("name", name);
-//     formData.append("email", email);
-//     formData.append("message", message);
-
-//     try {
-//       const response = await fetch("https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5", {
-//         method: "POST",
-//         body: formData,
-//       });
-
-//       if (response.ok) {
-//         setIsSent(true);
-//       } else {
-//         console.error("Form submission failed.");
-//       }
-//     } catch (error) {
-//       console.error("An error occurred:", error);
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h1>Contact Us</h1>
-//       {isSent ? (
-//         <p>Thank you for your message!</p>
-//       ) : (
-//         <Form onSubmit={handleSubmit}>
-//           <Form.Group controlId="name">
-//             <Form.Label>Name:</Form.Label>
-//             <Form.Control
-//               type="text"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               required
-//             />
-//           </Form.Group>
-
-//           <Form.Group controlId="email">
-//             <Form.Label>Email:</Form.Label>
-//             <Form.Control
-//               type="email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               required
-//             />
-//           </Form.Group>
-
-//           <Form.Group controlId="message">
-//             <Form.Label>Message:</Form.Label>
-//             <Form.Control
-//               as="textarea"
-//               rows={4}
-//               value={message}
-//               onChange={(e) => setMessage(e.target.value)}
-//               required
-//             />
-//           </Form.Group>
-
-//           <Button variant="primary" type="submit">
-//             Submit
-//           </Button>
-//         </Form>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Contactme;
-
-
-
 
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
-const ContactForm = () => {
+const Contactme = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
 
@@ -103,14 +16,17 @@ const ContactForm = () => {
     const formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
+    formData.append("subject", subject);
     formData.append("message", message);
 
-    // https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5
     try {
-      const response = await fetch("https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         setIsSent(true);
@@ -123,18 +39,22 @@ const ContactForm = () => {
   };
 
   return (
-    <Container>
-      <h1 className="text-center mt-4">Contact Us</h1>
+    <Container className="py-5">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={6}>
+          <h1 className="contactUs">Contact</h1>
           {isSent ? (
-            <p className="text-center mt-3">Thank you for your message!</p>
+            <div className="Contact">
+              <p className="mb-3 text-white">Thank you for your message!</p>
+            </div>
           ) : (
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="name">
-                <Form.Label>Name:</Form.Label>
+                <Form.Label className="namelabel">Name </Form.Label>
                 <Form.Control
                   type="text"
+                  placeholder="Full Name"
+                  id="Input"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -142,27 +62,43 @@ const ContactForm = () => {
               </Form.Group>
 
               <Form.Group controlId="email">
-                <Form.Label>Email:</Form.Label>
+                <Form.Label className="emaillabel">Email</Form.Label>
                 <Form.Control
                   type="email"
+                  id="Input"
+                  placeholder="example@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </Form.Group>
 
+              <Form.Group controlId="subject">
+                <Form.Label className="subjectlabel">Subject</Form.Label>
+                <Form.Control
+                  type="text"
+                  id="Input"
+                  placeholder="Enter your subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  required
+                />
+              </Form.Group>
+
               <Form.Group controlId="message">
-                <Form.Label>Message:</Form.Label>
+                <Form.Label className="msglabel">Message</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={4}
                   value={message}
+                  id="Input"
+                  placeholder="Type your message"
                   onChange={(e) => setMessage(e.target.value)}
                   required
                 />
               </Form.Group>
 
-              <div className="text-center">
+              <div className="btn">
                 <Button variant="primary" type="submit">
                   Submit
                 </Button>
@@ -175,4 +111,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contactme;

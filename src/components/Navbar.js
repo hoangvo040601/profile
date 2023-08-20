@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
@@ -50,9 +50,9 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span>f</span>
+          {/* <span>f</span>
           <span>g</span>
-          <span>s</span>
+          <span>s</span> */}
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
@@ -96,14 +96,14 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Button
+              <a
                 href="https://github.com/developer-abdulali"
                 target="_blank"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />
                 <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
+              </a>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
