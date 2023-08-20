@@ -42,10 +42,10 @@
   color: white;
   font-weight: 700;
   font-size: 30px;
-  margin: 30px 0;
+  margin: 100px 0;
 }
 
-.label {
+.namelabel {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -54,7 +54,34 @@
   font-size: 20px;
   margin-top: 15px;
 }
+.emaillabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
 
+.subjectlabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.msglabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
 #Input {
   padding: 13px;
   border-radius: 3px;
@@ -67,15 +94,17 @@
   margin-left: 50px;
   border: none;
   outline: none;
-  color: black;
+  color: white;
   font-weight: 800;
   font-size: 15px;
   border-radius: 20px;
+  z-index: 100;
+  cursor:pointer
 }
 
-.downloadResumeBtn:hover{
+/* .downloadResumeBtn:hover{
   background-color: rgb(121, 76, 76);
-}
+} */
 
 .btn {
   margin-top: 20px;
@@ -91,58 +120,3 @@
     font-size: 18px;
   }
 }
-
-/* .contactUs{
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  margin: 30px 0px;
-  font-size: 30px;
-}
-
-.namelabel{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-}
-.emaillabel{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 15px;
-}
-.subjectlabel{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  margin-top: 15px;
-  font-weight: 700;
-  font-size: 20px;
-}
-.msglabel{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 15px;
-
-}
-#Input{
-  padding: 13px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-}
-
-.btn{
-  margin-top: 20px;
-} */
