@@ -50,9 +50,9 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          {/* <span>f</span>
-          <span>g</span>
-          <span>s</span> */}
+          <span></span>
+          <span></span>
+          <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
@@ -97,7 +97,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <a
-                href="https://github.com/developer-abdulali"
+                href="https://github.com/developer-abdulali/Modern-Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

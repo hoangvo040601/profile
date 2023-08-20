@@ -28,6 +28,9 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              {/* <a href="/about">
+                <button className="downloadResumeBtn">Download resume</button>
+              </a> */}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

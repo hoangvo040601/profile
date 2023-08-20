@@ -1,5 +1,3 @@
-// https://getform.io/f/78efd669-a552-46bf-93d7-b41a763569f5
-
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
