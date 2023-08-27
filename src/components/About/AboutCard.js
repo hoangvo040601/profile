@@ -8,27 +8,25 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Abdul Ali </span>
-            from <span className="purple"> Pakistan.</span>
-            <br /> I am passionate web developer with experience in building
-            modern and responsive websites. I specialize in front-end
-            development using technologies like React, Next.js, Tailwind CSS,
-            Bootstrap etc.
+            Chào mọi người, Mình là <span className="purple">Võ Văn Hoàng </span>
+            Đến từ<span className="purple"> Hồ Chí Minh, Việt Nam</span>
+            <br /> Tôi là một người yêu thích lập trình. Mục tiêu ngắn hạn của tôi là lập trình frontend dài hạn hạn Fullstack.
+            Hiện tại tôi đã hoàn thiện chương trình học của trường, mong muốn tìm được nơi thực tập để nâng cao kinh nghiệm thực tế.
             <br />
-            Additionally, I am currently web developer intern at CodSoft.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            Ngoài việc lập trình, sở thích của tôi là: 
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Đá bóng
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Đọc truyện
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Nghe nhạc
+            </li>
+            <li className="about-activity">
+              <ImPointRight />Học hỏi những công nghệ mới
             </li>
           </ul>
         </blockquote>

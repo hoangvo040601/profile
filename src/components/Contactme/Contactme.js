@@ -40,18 +40,18 @@ const Contactme = () => {
     <Container className="py-5">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={6}>
-          <h1 className="contactUs">Contact</h1>
+          <h1 className="contactUs">Liên hệ</h1>
           {isSent ? (
             <div className="Contact">
-              <p className="mb-3 text-white">Thank you for your message!</p>
+              <p className="mb-3 text-white">Cảm ơn bạn đã phản hồi!</p>
             </div>
           ) : (
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="name">
-                <Form.Label className="namelabel">Name </Form.Label>
+                <Form.Label className="namelabel">Tên </Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="Họ và tên"
                   id="Input"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -72,11 +72,11 @@ const Contactme = () => {
               </Form.Group>
 
               <Form.Group controlId="subject">
-                <Form.Label className="subjectlabel">Subject</Form.Label>
+                <Form.Label className="subjectlabel">Tiêu đề</Form.Label>
                 <Form.Control
                   type="text"
                   id="Input"
-                  placeholder="Enter your subject"
+                  placeholder="Nhập tiêu đề"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   required
@@ -84,13 +84,13 @@ const Contactme = () => {
               </Form.Group>
 
               <Form.Group controlId="message">
-                <Form.Label className="msglabel">Message</Form.Label>
+                <Form.Label className="msglabel">Nội dung</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={4}
                   value={message}
                   id="Input"
-                  placeholder="Type your message"
+                  placeholder="Nhập nội dung"
                   onChange={(e) => setMessage(e.target.value)}
                   required
                 />

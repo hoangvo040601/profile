@@ -41,7 +41,7 @@ function NavBar() {
             className="img-fluid logo"
             style={{ color: "#CD5EF7", fontSize: "30px" }}
           >
-            AA
+            Hoàng
           </span>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -97,7 +97,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <a
-                href="https://github.com/developer-abdulali/Modern-Portfolio"
+                href="https://github.com/hoangvo040601/profile.git"
                 target="_blank"
                 className="fork-btn-inner"
               >

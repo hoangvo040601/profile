@@ -4,9 +4,7 @@ import { ImHtmlFive } from "react-icons/im";
 import { DiCss3, DiJavascript1, DiReact } from "react-icons/di";
 import {
   SiNextdotjs,
-  SiFirebase,
   SiBootstrap,
-  SiTailwindcss,
 } from "react-icons/si";
 
 import { SiTypescript } from "react-icons/si";
@@ -35,12 +33,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
       </Col>
     </Row>
   );

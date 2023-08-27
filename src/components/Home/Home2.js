@@ -12,29 +12,20 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              <span className="purple"> Giới thiệu về</span> Bản thân
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Tôi thích lập trình Frontend web là vì tôi thích sự thực tế mà nó mang lại.
               <br />
-              <br />I am fluent in classics like
+              <br />Tôi có thể sử dụng
               <i>
                 <b className="purple">
                   {" "}
-                  HTML, Tailwind CSS, Javascript, React js and Next js{" "}
+                  HTML, Bootstrap 5, Javascript, Reactjs (Ngoài ra có thể dùng cơ bản: Typescript, Nextjs 13)
                 </b>
               </i>
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also I will learn Mobile App Development.
-                {/* <b className="purple">
-                  Blockchain. 
-                </b> */}
-              </i>
+              
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -45,14 +36,14 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>Liên hệ với tôi</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              <span className="purple">kết nối thông qua</span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/developer-abdulali"
+                  href="https://github.com/hoangvo040601"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -62,17 +53,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/ab_ali2k23"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/abdulali12/"
+                  href="https://www.linkedin.com/in/hoang-vo-a84009209/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -82,7 +63,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.facebook.com/abdulalisoomro2k23"
+                  href="https://www.facebook.com/profile.php?id=100050788595221"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

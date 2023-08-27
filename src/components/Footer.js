@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiOutlineTwitter, AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub,AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Developed by Abdul Ali</h3>
+          <h3>Phát triển bởi Võ văn Hoàng</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
@@ -19,7 +19,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/developer-abdulali"
+                href="https://github.com/hoangvo040601"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,17 +29,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/ab_ali2k23"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/abdulali12/"
+                href="https://www.linkedin.com/in/hoang-vo-a84009209/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +39,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.facebook.com/abdulalisoomro2k23"
+                href="https://www.facebook.com/profile.php?id=100050788595221"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
